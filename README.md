@@ -1,29 +1,37 @@
 # Testes automatizados com Cypress - Básico
 
+## Sobre o projeto
 👋 Seja bem-vindo(a)!
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Esse projeto tem como objetivo o estudo e prática dos exercicios do curso [Cypress Básico](https://www.udemy.com/course/testes-automatizados-com-cypress-basico) ministrado pelo grande [Walmyr Filho](https://github.com/wlsf82)
 
-## O que você vai aprender
+## Pré-requisitos
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+Esse projeto tem como pré-requisitos a instalação:
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+- Node v18.17.1
+- npm v10.8.3
 
-## Vamos começar?
+## Instalação
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+Para instalar as dependências do projeto, via terminal, acessar o diretório clonado `cd /usuario/cypress-basico-v2` e executar o comando `npm i` ou `npm install`
 
-___
+### Versão do Cypress
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+Para ter compatibilidade com o material do curso, a versão utilizada do Cypress é a `9.5.1`
+
+## Executando os testes
+
+Via linha de comando, acessar o diretório `cd /usuario/cypress-basico-v2` e, dependendo do tipo de testes que queira rodar, executar um dos comandos abaixo:
+
+Modo navegador por interface gráfica:
+> npm run cy:open
+
+Modo mobile por interface gráfica:
+> npm run cy:open:mobile
+
+Modo navegador sem interface gráfica (headless):
+> npm run test
+
+Modo mobile sem interface gráfica (headless):
+> npm run test:mobile
