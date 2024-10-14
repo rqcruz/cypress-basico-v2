@@ -353,3 +353,24 @@ describe('Aula e exercicios contidos em /lessons/11.md', function() {
     })
 
 })
+
+describe('Aula e exercicios contidos em /lessons/12.md', function() {
+
+    beforeEach(function () {
+        cy.visit('./src/index.html')
+    });
+    
+    // Exercicio
+    it('encontre o gato escondido', function() {
+         cy.get('#cat')
+         .invoke('show')
+         .should('be.visible')
+
+        cy.get('#title')
+            .invoke('text', 'CAT TAT')
+
+        cy.get('#subtitle')
+            .invoke('text', 'Subtitulo agora é gatos')
+    })
+    
+})
